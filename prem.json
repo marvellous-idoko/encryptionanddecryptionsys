@@ -1,0 +1,17 @@
+{
+    "grater":{
+        "model": "gra404",
+        "prize":"500",
+        "year":"2009"
+    },
+    "planter":{
+        "model": "PL404",
+        "prize":"800",
+        "year":"1909"
+    },
+    "harvester":{
+        "model": "HA3309",
+        "prize":"2300",
+        "year":"1901"
+    }
+}

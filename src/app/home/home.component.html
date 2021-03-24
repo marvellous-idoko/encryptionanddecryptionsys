@@ -1,0 +1,128 @@
+<section style="display: flex;margin-top: 20px" *ngIf="this.show===false">
+    <section style="display:flex;flex-direction: column;">
+        <button mat-button class="col" style=" animation-delay: .4s ;background:blue; color:white;">
+            <h1>
+                Encrypt your files with keys
+            </h1>
+        </button>
+        <button mat-button class="colo" style="animation-delay: 2s ; border-color:blue; color: blue;">
+
+            <h1>Protect your files from invaders </h1>
+
+        </button>
+
+    </section>
+    <section style="margin-left:100px;">
+        <button mat-button class="col" style="animation-delay: 1.4s ;  background:blue; color:white;">
+            <h1> Keep your stuff private</h1>
+        </button>
+        <button mat-button class="colo" style="animation-delay: 2.4s; border-color: blue; color: blue;">
+            <h1> Privacy is a human right </h1>
+        </button>
+    </section>
+    <section style="margin-left:100px;">
+        <button mat-button class="colo" style="animation-delay: 1.4s; border-color: blue; color: blue;">
+            <h1> Keep your stuff private</h1>
+        </button>
+        <button mat-button class="col" style="animation-delay: 2.4s; background:blue; color:white;">
+            <h1> Never be caught off guard </h1>
+        </button>
+    </section>
+    <section style="position:absolute;bottom: 10%;width: 100%;">
+        <div style="display: flex;justify-content: center;max-width: fit-content;margin: auto;">
+            <a (click)="gotoEnc('encrypt')"><button mat-button>
+                    <h1>Encrypt</h1>
+                </button></a>
+            <a (click)="gotoDec()"><button mat-button id="kl">
+                    <h1>Decrypt</h1>
+                </button></a>
+        </div>
+    </section>
+</section>
+<section style="display: flex;height: 88% " *ngIf="this.show===true">
+    <nav id="sideNav" style="display: flex;flex-direction: column;">
+        <button (click)="gotoEnc()" id="mk" mat-button>
+            <h1>Encrypt</h1>
+        </button>
+        <button (click)="gotoDec()" id="pk" mat-button>
+            <h1>Decrypt</h1>
+        </button>
+    </nav>
+    <section id="main">
+        <section class="sectors" id="encrypt">
+            <div>
+                <a id="lo" style="visibility: hidden;">
+                    <button mat-button-raised (click)="koo()">
+                        <h3> Downlolad</h3>
+                    </button>
+                </a>
+                <mat-card style="max-width: fit-content;margin:auto;">
+                    <input style="display:none;" type="file" class="mat-button" (change)="selectFile($event)"
+                        #fileInput>
+
+                    <button mat-stroked-button color="accent" (click)="fileInput.click()">
+                        <mat-icon>note_add</mat-icon>
+                        <h3>Select a File to Encrypt</h3>
+                    </button>
+                    <form [formGroup]="keye" validate>
+                        <mat-form-field appearance="outline">
+                            <mat-label>input encryption key</mat-label>
+                            <input id="key" type="text" formControlName="key"matInput>
+                        </mat-form-field>
+                    </form>
+                    
+                </mat-card><br><br>
+                <div style="display:flex; justify-content: center; align-items:center;">
+                <button style="max-width: fit-content;margin:auto;" color="primary" mat-raised-button (click)="ko()">
+                    <mat-icon>lock</mat-icon>
+                    <h6 style="margin: 0px;"> Encrypt</h6>
+                </button>
+            </div>
+                
+                <a id="lo" style="visibility: hidden;">
+                    <button mat-button-raised (click)="koo()">
+                        <h3> Downlolad</h3>
+                    </button>
+                </a>
+            </div>
+        </section>
+        <section class="sectors" id="decrypt">
+            <div>
+                <mat-card style="max-width: fit-content;margin:auto;">
+
+                    <input style="display:none;" type="file" class="mat-button" (change)="selectFiles($event)"
+                        #fileInputD>
+
+                    <button mat-stroked-button (click)="fileInputD.click()" color="accent" >
+                        <h3>Select a File to Decrypt</h3>
+                    </button>
+                    <form [formGroup]="key" validate>
+                        <mat-form-field appearance="outline" color="accent" 
+                        >
+                            <mat-label>input encryption key</mat-label>
+                            <input id="key" formControlName="key" type="text" matInput>
+                        </mat-form-field>
+                    </form>
+                    <i style="color: red;" *ngIf="this.a === true">wrong key</i>
+                </mat-card>
+                <br>
+                <br>
+
+                <div style="display:flex; justify-content: center; align-items:center;">
+                    <button style="max-width: fit-content;margin:auto;" color="primary" mat-raised-button 
+                    (click)="dko()">
+                        <mat-icon>lock_open</mat-icon>
+                        <h6 style="margin: 0px;"> Decrypt</h6>
+                    </button>
+                </div>
+
+                <a id="low" style="visibility: hidden;">
+                    <button mat-button-raised (click)="dkoo()">
+                        <h3> Downlolad</h3>
+                    </button>
+                </a>
+
+            </div>
+        </section>
+    </section>
+</section>

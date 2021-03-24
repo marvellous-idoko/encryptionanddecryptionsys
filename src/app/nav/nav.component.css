@@ -1,0 +1,36 @@
+.links{
+    color: white;
+    padding: 8px 15px;
+    margin: 12px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    will-change: all;
+    border-top-left-radius: 25px;
+    transition: all 0.35s ease-in;
+}
+.active{
+    color: #1976d2;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: whitesmoke;
+}
+.links:hover{
+    color: #1976d2;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: whitesmoke;
+}
+a{
+    text-decoration: none;
+}
+#mo{
+    display: flex;
+}
+.spacer{
+    flex: 1;
+}

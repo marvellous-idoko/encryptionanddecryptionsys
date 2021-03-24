@@ -1,0 +1,75 @@
+section>button{
+    height: 200px;
+    width: 200px;
+    border: 3px solid;
+    box-sizing: border-box;
+    will-change: color, background;
+    transition: all .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    border-radius: 50%;
+    white-space: break-spaces;
+        /* border-radius: 20px; */
+    animation: pep 10s infinite ;
+}
+a>button:hover{
+    background: white;
+    color: blue;
+    border: blue 2px solid;
+}
+a>button{
+    width: 200px;
+    background: blue;
+    color: white;
+    margin: 0 100px;
+    border-radius: 100px;
+    will-change: background,color;
+    transition: all .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    box-sizing: border-box;
+}
+a>button#kl:hover{
+    background: blue;
+    color: white;
+}
+a>button#kl{
+    background: white;
+    color: blue;
+    border: blue 2px solid;
+}
+@keyframes pep{
+    from{
+        transform: translate(10px, 80px);
+    }
+    50%{
+        transform: translate(80px, 60px);
+        height: 170px;
+        width: 170px;
+    }
+    100%{
+        transform: translate(10px, 80px);
+    }
+}
+.col:hover{
+    background: white!important;
+    color: blue!important;
+}
+.colo:hover{
+    background: blue!important;
+    color: white!important;
+}
+nav#sideNav{
+    position: fixed;
+    height: 100%;
+    background: blue;
+}
+section#main{
+    flex: 1;
+    padding-left: 6%;
+}
+.active{
+    background-color: #ccc;
+    color: blue;
+}
+.sectors{
+    display: block;
+    height: stretch;
+    background: #ccc;
+}

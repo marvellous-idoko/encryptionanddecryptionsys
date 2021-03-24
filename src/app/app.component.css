@@ -1,0 +1,10 @@
+.mat-drawer-container{
+    height: 100%!important;
+}
+#spacer {
+    flex: 1 1 auto;
+}
+#uiop{
+    height:50px;
+    width: stretch;
+background-color: tomato; border: yellowgreen 2px solid; color: white;}
