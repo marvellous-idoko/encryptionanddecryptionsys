@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<section>\n\n</section>");
+/* harmony default export */ __webpack_exports__["default"] = ("<section>\n    <!-- <dialog> -->\n\n    <mat-card>\n        <mat-card-header>\n            <mat-card-title>Log In</mat-card-title>\n        </mat-card-header>\n        <mat-card-content>\n            <form [formGroup]=\"addressForm\" validate>\n            <!-- <mat-error *ngIf=\"err\">\n                <strong>{{err}}</strong>\n            </mat-error> -->\n\n        <div class=\"row\">\n            <div class=\"col\">\n                <mat-form-field class=\"full-width\">\n                    <input type=\"text\" matInput placeholder=\"Your email Please . . .\"\n                     formControlName=\"email\" />\n                    <mat-error *ngIf=\"addressForm.controls['email'].hasError('required')\">\n                        <strong>email is required</strong>\n                    </mat-error>\n                </mat-form-field>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col\">\n                <mat-form-field class=\"full-width\">\n                    <input type=\"password\" matInput placeholder=\"Password\"\n                     formControlName=\"pwd\" />\n                    <mat-error *ngIf=\"addressForm.controls['pwd'].hasError('required')\">\n                        <strong>Password </strong>\n                    </mat-error>\n                </mat-form-field>\n            </div>\n        </div>\n\n\n        <div style=\"display: flex\">\n            <div style=\"margin: 0 42px 0 0;\">\n                <mat-card-actions>\n                    <button mat-raised-button type=\"submit\" id=\"ppp\" (click)=\"goto()\">Create Account</button>\n                </mat-card-actions>\n            </div>\n            <div >\n                <mat-card-actions>\n                    <button mat-raised-button  id =\"bk\" color=\"primary\" type=\"submit\" (click)=\"onSubmit()\">Login</button>\n                </mat-card-actions>\n            </div>\n\n            <!-- </div> -->\n        </div>\n        \n    </form>\n</mat-card-content>\n\n    </mat-card>\n    <!-- </dialog> -->\n</section>");
 
 /***/ }),
 
@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<form [formGroup]=\"addressForm\" validate>\n  <mat-card class=\"shipping-card\">\n    <mat-card-header>\n      <mat-card-title>Personal Information</mat-card-title>\n    </mat-card-header>\n    <mat-card-content>\n\n      <!-- <div class=\"row\">\n        <div class=\"col\">\n          <mat-form-field class=\"full-width\">\n            <input matInput placeholder=\"Company\" formControlName=\"company\">\n          </mat-form-field>\n        </div>\n      </div> -->\n      <div>\n        <div class=\"col\">\n          <mat-form-field class=\"full-width\">\n            <input matInput placeholder=\"First name\" formControlName=\"firstName\">\n            <mat-error *ngIf=\"addressForm.controls['firstName'].hasError('required')\">\n              First name is <strong>required</strong>\n            </mat-error>\n          </mat-form-field>\n        </div>\n        <div class=\"col\">\n          <mat-form-field class=\"full-width\">\n            <input matInput placeholder=\"Last name\" formControlName=\"lastName\">\n            <mat-error *ngIf=\"addressForm.controls['lastName'].hasError('required')\">\n              Last name is <strong>required</strong>\n            </mat-error>\n          </mat-form-field>\n        </div>\n      </div>\n      <div>\n        <div class=\"col\">\n          <mat-form-field class=\"full-width\">\n            <input matInput placeholder=\"email\" type=\"email\" formControlName=\"email\">\n            <mat-error *ngIf=\"addressForm.controls['email'].hasError('required')\">\n              email is <strong>required</strong>\n            </mat-error>\n          </mat-form-field>\n        </div>\n        <div class=\"col\">\n          <mat-form-field class=\"full-width\">\n            <input matInput placeholder=\"contact\" type=\"tel\" formControlName=\"contact\">\n            <mat-error *ngIf=\"addressForm.controls['contact'].hasError('required')\">\n              email is <strong>required</strong>\n            </mat-error>\n          </mat-form-field>\n        </div>\n      </div>\n      <div>\n        <div class=\"col\">\n          <mat-form-field class=\"full-width\">\n            <textarea matInput placeholder=\"Address\" formControlName=\"address\"></textarea>\n            <mat-error *ngIf=\"addressForm.controls['address'].hasError('required')\">\n              Address is <strong>required</strong>\n            </mat-error>\n          </mat-form-field>\n        </div>\n      </div>\n      <div>\n        <div class=\"col\">\n          <mat-form-field appearance=\"fill\">\n            <mat-label>Register as a</mat-label>\n            <mat-select formControlName=\"typ\">\n              <mat-option value=\"healthPraticioner\">Health Practioner</mat-option>\n              <mat-option value=\"agent\">Agent</mat-option>\n              <mat-option value=\"client\">Client</mat-option>\n            </mat-select>\n          </mat-form-field>\n        </div><br>\n        <div>\n          <mat-form-field appearance=\"fill\">\n            <mat-label>Date of Birth</mat-label>\n            <input matInput [matDatepicker] = \"picker\" formControlName=\"DOB\">\n            <mat-datepicker-toggle matSuffix [for] = \"picker\" ></mat-datepicker-toggle>\n            <mat-datepicker #picker></mat-datepicker>\n            <mat-error *ngIf=\"addressForm.controls['DOB'].hasError('required')\">\n              Date of Birth is <strong>required</strong>\n            </mat-error>\n          </mat-form-field>\n        </div>\n      </div>\n      <div>\n        <div class=\"col\">\n          <mat-form-field class=\"full-width\">\n            <input type=\"password\" matInput placeholder=\"Password\" formControlName=\"pwd\" />\n            <mat-error *ngIf=\"addressForm.controls['pwd'].hasError('required')\">\n              <strong>Password </strong>\n            </mat-error>\n          </mat-form-field>\n        </div>\n      </div>\n\n    </mat-card-content>\n    <mat-card-actions>\n      <button mat-raised-button color=\"primary\" type=\"submit\" (click)=\"onSubmit()\">Submit</button>\n    </mat-card-actions>\n  </mat-card>\n</form>");
+/* harmony default export */ __webpack_exports__["default"] = ("<form [formGroup]=\"addressForm\" validate>\n  <mat-card class=\"shipping-card\" style=\"max-width: 50%;\">\n    <mat-card-header>\n      <mat-card-title>Personal Information</mat-card-title>\n    </mat-card-header>\n    <mat-card-content>\n\n      \n      <div>\n        <div class=\"col\">\n          <mat-form-field class=\"full-width\">\n            <input matInput placeholder=\"First name\" formControlName=\"firstName\">\n            <mat-error *ngIf=\"addressForm.controls['firstName'].hasError('required')\">\n              First name is <strong>required</strong>\n            </mat-error>\n          </mat-form-field>\n        </div>\n        <div class=\"col\">\n          <mat-form-field class=\"full-width\">\n            <input matInput placeholder=\"Last name\" formControlName=\"lastName\">\n            <mat-error *ngIf=\"addressForm.controls['lastName'].hasError('required')\">\n              Last name is <strong>required</strong>\n            </mat-error>\n          </mat-form-field>\n        </div>\n      </div>\n      <div>\n        <div class=\"col\">\n          <mat-form-field class=\"full-width\">\n            <input matInput placeholder=\"email\" type=\"email\" formControlName=\"email\">\n            <mat-error *ngIf=\"addressForm.controls['email'].hasError('required')\">\n              email is <strong>required</strong>\n            </mat-error>\n          </mat-form-field>\n        </div>\n        \n      </div>\n     \n      <div>\n               \n      </div>\n      <div>\n        <div class=\"col\">\n          <mat-form-field class=\"full-width\">\n            <input type=\"password\" matInput placeholder=\"Password\" formControlName=\"pwd\" />\n            <mat-error *ngIf=\"addressForm.controls['pwd'].hasError('required')\">\n              <strong>Password </strong>\n            </mat-error>\n          </mat-form-field>\n        </div>\n        <div class=\"col\">\n          <mat-form-field class=\"full-width\">\n            <input type=\"password\" matInput placeholder=\"Confirm Password\" \n            formControlName=\"cpwd\" />\n            <mat-error *ngIf=\"addressForm.controls['pwd'].hasError('required')\">\n              <strong>Password </strong>\n            </mat-error>\n          </mat-form-field>\n        </div>\n      </div>\n      <i *ngIf=\"this.lk === true\">verify your password</i>\n\n    </mat-card-content>\n    <mat-card-actions>\n      <button mat-raised-button color=\"primary\" type=\"submit\" (click)=\"onSubmit()\">Register</button>\n    </mat-card-actions>\n  </mat-card>\n</form>");
 
 /***/ }),
 
@@ -347,7 +347,7 @@ __webpack_require__.r(__webpack_exports__);
 // import { MakeClaimHistoryComponent } from "./make-claim-history/make-claim-history.component";
 // import { MakeClaimsComponent } from "./make-claims/make-claims.component";
 const routes = [
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: 'home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
     { path: 'register', component: _register_register_component__WEBPACK_IMPORTED_MODULE_4__["RegisterComponent"] },
     { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_5__["LoginComponent"] },
@@ -759,7 +759,7 @@ let LoginComponent = class LoginComponent {
         this.s = s;
         this.r = r;
         this.addressForm = this.fb.group({
-            id: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+            email: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
             pwd: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]
         });
     }
@@ -772,24 +772,22 @@ let LoginComponent = class LoginComponent {
             this.document.getElementById('bk').disabled = true;
             this.document.getElementById('ppp').disabled = true;
             const cred = {
-                id: this.addressForm.get('id').value,
-                pwd: this.addressForm.get('pwd').value
+                email: this.addressForm.get('email').value,
+                password: this.addressForm.get('pwd').value
             };
-            (yield this.s.login(cred)).subscribe(c => {
+            (yield this.s.addLogin(cred)).subscribe(c => {
                 console.info(c);
                 // alert(c.toString().slice(0,15));
-                if (c.toString().slice(0, 15) == 'Unable to Login') {
-                    alert(c);
+                if (c == 'Unable to Login') {
+                    console.log(c);
                     this.document.getElementById('bk').innerHTML = "login";
                     this.document.getElementById('bk').removeAttribute('disabled');
                     this.document.getElementById('ppp').removeAttribute('disabled');
                 }
                 else {
-                    var d = Object.values(c).pop();
-                    this.s.maker(d);
-                    if (d.fullName.length > 0) {
-                        this.r.navigateByUrl('/home');
-                    }
+                    this.name = c['fullName'];
+                    alert(c['fullName'] + ", You have successfully logged into the Encryption and Decrytion system");
+                    this.r.navigateByUrl('/home');
                 }
             });
         });
@@ -845,6 +843,9 @@ __webpack_require__.r(__webpack_exports__);
 let NavComponent = class NavComponent {
     constructor() { }
     ngOnInit() {
+        this.name = 'user';
+    }
+    setter() {
     }
 };
 NavComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -878,12 +879,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let RegLogService = class RegLogService {
-    // server = 'http://localhost:3000/';
     constructor(Http, r) {
         this.Http = Http;
         this.r = r;
         // public uq;
         this.server = 'https://insurebeta.herokuapp.com/';
+        // svr = 'eta.herokuapp.com/';
+        this.svr = 'https://api-sansti-kudi.herokuapp.com/';
     }
     createHP(userr) {
         var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]();
@@ -911,6 +913,16 @@ let RegLogService = class RegLogService {
         this.u = s;
         console.log(this.u);
         console.log(s);
+    }
+    addReg(r) {
+        var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]();
+        headers.append('Content-Type', 'applicatiion/json');
+        return this.Http.post(this.svr + 'addReg', r, { headers: headers });
+    }
+    addLogin(d) {
+        var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]();
+        headers.append('Content-Type', 'applicatiion/json');
+        return this.Http.post(this.svr + 'addLogin', d, { headers: headers });
     }
 };
 RegLogService.ctorParameters = () => [
@@ -966,128 +978,34 @@ let RegisterComponent = class RegisterComponent {
         this.s = s;
         this.r = r;
         this.addressForm = this.fb.group({
-            company: null,
             firstName: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
             lastName: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
             email: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
-            address: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
-            contact: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
             pwd: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(5), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(15)],
-            conpwd: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
-            city: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
-            state: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
-            typ: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
-            DOB: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
-            postalCode: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(5), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(5)],
-            shipping: ['free', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]
+            cpwd: [null, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
         });
-        this.hasUnitNumber = false;
-        this.states = [
-            { name: 'Alabama', abbreviation: 'AL' },
-            { name: 'Alaska', abbreviation: 'AK' },
-            { name: 'American Samoa', abbreviation: 'AS' },
-            { name: 'Arizona', abbreviation: 'AZ' },
-            { name: 'Arkansas', abbreviation: 'AR' },
-            { name: 'California', abbreviation: 'CA' },
-            { name: 'Colorado', abbreviation: 'CO' },
-            { name: 'Connecticut', abbreviation: 'CT' },
-            { name: 'Delaware', abbreviation: 'DE' },
-            { name: 'District Of Columbia', abbreviation: 'DC' },
-            { name: 'Federated States Of Micronesia', abbreviation: 'FM' },
-            { name: 'Florida', abbreviation: 'FL' },
-            { name: 'Georgia', abbreviation: 'GA' },
-            { name: 'Guam', abbreviation: 'GU' },
-            { name: 'Hawaii', abbreviation: 'HI' },
-            { name: 'Idaho', abbreviation: 'ID' },
-            { name: 'Illinois', abbreviation: 'IL' },
-            { name: 'Indiana', abbreviation: 'IN' },
-            { name: 'Iowa', abbreviation: 'IA' },
-            { name: 'Kansas', abbreviation: 'KS' },
-            { name: 'Kentucky', abbreviation: 'KY' },
-            { name: 'Louisiana', abbreviation: 'LA' },
-            { name: 'Maine', abbreviation: 'ME' },
-            { name: 'Marshall Islands', abbreviation: 'MH' },
-            { name: 'Maryland', abbreviation: 'MD' },
-            { name: 'Massachusetts', abbreviation: 'MA' },
-            { name: 'Michigan', abbreviation: 'MI' },
-            { name: 'Minnesota', abbreviation: 'MN' },
-            { name: 'Mississippi', abbreviation: 'MS' },
-            { name: 'Missouri', abbreviation: 'MO' },
-            { name: 'Montana', abbreviation: 'MT' },
-            { name: 'Nebraska', abbreviation: 'NE' },
-            { name: 'Nevada', abbreviation: 'NV' },
-            { name: 'New Hampshire', abbreviation: 'NH' },
-            { name: 'New Jersey', abbreviation: 'NJ' },
-            { name: 'New Mexico', abbreviation: 'NM' },
-            { name: 'New York', abbreviation: 'NY' },
-            { name: 'North Carolina', abbreviation: 'NC' },
-            { name: 'North Dakota', abbreviation: 'ND' },
-            { name: 'Northern Mariana Islands', abbreviation: 'MP' },
-            { name: 'Ohio', abbreviation: 'OH' },
-            { name: 'Oklahoma', abbreviation: 'OK' },
-            { name: 'Oregon', abbreviation: 'OR' },
-            { name: 'Palau', abbreviation: 'PW' },
-            { name: 'Pennsylvania', abbreviation: 'PA' },
-            { name: 'Puerto Rico', abbreviation: 'PR' },
-            { name: 'Rhode Island', abbreviation: 'RI' },
-            { name: 'South Carolina', abbreviation: 'SC' },
-            { name: 'South Dakota', abbreviation: 'SD' },
-            { name: 'Tennessee', abbreviation: 'TN' },
-            { name: 'Texas', abbreviation: 'TX' },
-            { name: 'Utah', abbreviation: 'UT' },
-            { name: 'Vermont', abbreviation: 'VT' },
-            { name: 'Virgin Islands', abbreviation: 'VI' },
-            { name: 'Virginia', abbreviation: 'VA' },
-            { name: 'Washington', abbreviation: 'WA' },
-            { name: 'West Virginia', abbreviation: 'WV' },
-            { name: 'Wisconsin', abbreviation: 'WI' },
-            { name: 'Wyoming', abbreviation: 'WY' }
-        ];
+        this.lk = false;
     }
     onSubmit() {
         var e = this.addressForm.get('pwd').value;
-        var y = this.addressForm.get('conpwd').value;
-        var form = {
-            fullname: this.addressForm.get('firstName').value + " " + this.addressForm.get('lastName').value,
-            address: this.addressForm.get('address').value,
-            contact: this.addressForm.get('contact').value,
-            email: this.addressForm.get('email').value,
-            company: this.addressForm.get('company').value,
-            pwd: this.addressForm.get('pwd').value,
-            DOB: this.addressForm.get('DOB').value
-        };
-        // console.log(this.addressForm.value)
-        if (this.addressForm.get('typ').value == 'agent') {
-            this.s.createAgent(form).subscribe(de => {
-                alert(de + '\n Keep It Safe');
-                this.r.navigateByUrl('login');
-            }, error => {
-                console.error(error);
-                alert(error);
-            });
-        }
-        else if (this.addressForm.get('typ').value == 'healthPraticioner') {
-            this.s.createHP(form).subscribe(de => {
-                alert(de + '\n Keep It Safe');
-                this.r.navigateByUrl('login');
-            }, error => {
-                console.error(error);
-                alert(error);
-            });
-        }
-        else if (this.addressForm.get('typ').value == 'client') {
-            this.s.createClient(form).subscribe(de => {
-                alert(de + '\n Keep It Safe');
-                this.r.navigateByUrl('login');
-            }, error => {
-                console.error(error);
-                alert(error);
-            });
+        var y = this.addressForm.get('cpwd').value;
+        if (e != y) {
+            this.lk = true;
         }
         else {
-            alert('complete the form');
+            var form = {
+                fullName: this.addressForm.get('firstName').value + " " + this.addressForm.get('lastName').value,
+                email: this.addressForm.get('email').value,
+                password: this.addressForm.get('pwd').value,
+            };
+            this.s.addReg(form).
+                subscribe(r => {
+                console.info(r);
+                alert(r);
+                this.r.navigateByUrl('login');
+            });
         }
-        // alert('Thanks!');
+        // console.log(this.addressForm.value)
     }
 };
 RegisterComponent.ctorParameters = () => [
@@ -1103,6 +1021,7 @@ RegisterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     })
 ], RegisterComponent);
 
+// alert('Thanks!');
 
 
 /***/ }),
